@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIP & Lumpsum Calculator</title>
+<link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div id="calculator">
+    <h2>SIP & Lumpsum Calculator</h2>
+    <label for="type">Select Investment Type:</label>
+    <br>
+    <input type="radio" id="sip"  name="investmentType" value="sip" checked> SIP (Monthly)
+    <input type="radio" id="lumpsum"  name="investmentType" value="lumpsum"> Lumpsum
+    <br>
+    <br>
+    <label for="amount">Investment Amount:</label>
+    <input type="number" id="amount" placeholder="Enter amount">
+    <label for="rate">Annual Interest Rate (%):</label>
+    <input type="number" id="rate" placeholder="Enter interest rate">
+    <label for="time">Time Period (in years):</label>
+    <input type="number" id="time" placeholder="Enter time period">
+    <input type="submit" value="Calculate" onclick="calculate()">
+    <div id="result" style="margin-top: 10px;"></div>
+
+    
+
+    <script src="script.js"></script>
+</div>
+<div id="chartContainer" style="margin-top: 20px;">
+    <canvas id="myChart" width="400" height="400"></canvas>
+</div>
+</body>
+</html>
+
